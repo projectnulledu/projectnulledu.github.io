@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project Null Education</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<style>
+/* Global Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+header h1 {
+	margin: 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+main {
+	margin-top: 80px;
+}
+
+section {
+	padding: 40px;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+/* About Section */
+#about {
+	background-color: #f9f9f9;
+}
+
+/* Pricing Section */
+#pricing {
+	background-color: #ddd;
+}
+
+#pricing ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#pricing li {
+	margin-bottom: 10px;
+}
+
+#pricing li:last-child {
+	margin-bottom: 0;
+}
+
+/* Contact Section */
+#contact {
+	background-color: #f9f9f9;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+}
+
+form button[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+	background-color: #444;
+}
+
+/* Footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+</style>
+<body>
+	<header>
+		<h1>Project Null Education</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="about">
+			<h2>About Project Null Education</h2>
+			<p>Project Null Education is a company that provides coding lessons both in person and online. Our mission is to empower people to learn to code and become confident developers.</p>
+			<p>Our lessons are taught by experienced developers who are passionate about teaching and helping others learn. We offer a range of courses for all skill levels, from beginners to advanced developers.</p>
+			<p>Our courses cover a variety of programming languages and frameworks, including HTML, CSS, JavaScript, Python, and more.</p>
+			<p>To enroll in our courses, you must have a GitHub account and be willing to put in the time and effort to learn.</p>
+		</section>
+
+		<section id="pricing">
+			<h2>Pricing</h2>
+			<p>We offer three pricing tiers:</p>
+			<ul>
+				<li>Basic: $15 per month (4 Sessions)</li>
+				<li>Pro: $30 per month (8 Sessions)</li>
+				<li>Ultimate: $60 per month (16 Sessions)</li>
+			</ul>
+			<p>All pricing tiers include access to our online courses and community forums. Pro and Ultimate tiers include additional benefits such as one-on-one coaching and access to exclusive content.</p>
+            <p> All prices are in Canadian Dollars (CAD) and each session is approx. 20-30 minutes long</p>
+		</section>
+
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<form action="submit.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea name="message" rows="5" required></textarea>
+
+				<button type="submit">Send</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Project Null Education</p>
+	</footer>
+</body>
+</html>
